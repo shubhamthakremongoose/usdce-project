@@ -7,10 +7,8 @@ export default function BackgroundBlocks() {
     useEffect(() => {
         const mount = mountRef.current;
 
-        // Scene
         const scene = new THREE.Scene();
 
-        // Camera
         const camera = new THREE.PerspectiveCamera(
             75,
             window.innerWidth / window.innerHeight,
@@ -19,7 +17,6 @@ export default function BackgroundBlocks() {
         );
         camera.position.z = 5;
 
-        // Renderer
         const renderer = new THREE.WebGLRenderer({ alpha: true });
         renderer.setSize(window.innerWidth, window.innerHeight);
         mount.appendChild(renderer.domElement);
@@ -40,14 +37,13 @@ export default function BackgroundBlocks() {
             cube.position.set(
                 (Math.random() - 0.5) * 15,
                 (Math.random() - 0.5) * 15,
-                Math.random() * -20 // start cubes deep in background
+                Math.random() * -20
             );
 
             scene.add(cube);
             cubes.push(cube);
         }
 
-        // Lights
         const light = new THREE.PointLight(0xffffff, 1);
         light.position.set(2, 3, 4);
         scene.add(light);
@@ -64,7 +60,6 @@ export default function BackgroundBlocks() {
             requestAnimationFrame(animate);
 
             cubes.forEach((cube) => {
-                // Move cube toward camera
                 cube.position.z += 0.02;
 
                 // Reset cube when it reaches front
@@ -82,7 +77,6 @@ export default function BackgroundBlocks() {
 
         animate();
 
-        // Resizing
         const handleResize = () => {
             renderer.setSize(window.innerWidth, window.innerHeight);
             camera.aspect = window.innerWidth / window.innerHeight;
@@ -91,7 +85,6 @@ export default function BackgroundBlocks() {
 
         window.addEventListener("resize", handleResize);
 
-        // Cleanup
         return () => {
             window.removeEventListener("resize", handleResize);
             mount.removeChild(renderer.domElement);

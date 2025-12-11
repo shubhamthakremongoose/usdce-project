@@ -91,7 +91,7 @@ export default function Hero() {
                     Digital Stability Built on USDC Principles, Performance Powered by MST Blockchain.
                 </p>
 
-                <button className="flex items-center tracking-wide font-semibold gap-2 mx-auto mt-6 px-6 py-2 border hover:bg-gray-100 transition-all">
+                <button className="flex items-center cursor-pointer tracking-wide font-semibold gap-2 mx-auto mt-6 px-6 py-2 border hover:bg-gray-100 transition-all">
                     Mint USDCE
                     <ArrowRight className="w-5 h-5" />
                 </button>
