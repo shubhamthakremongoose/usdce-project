@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+@layer utilities {
+  .text-hero {
+    font-size: 24px;
+  }
+
+  @media (min-width: 640px) {
+    .text-hero {
+      font-size: 32px;
+    }
+  }
+
+  @media (min-width: 768px) {
+    .text-hero {
+      font-size: 44px;
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .text-hero {
+      font-size: 60px;
+    }
+  }
+
+  @media (min-width: 1280px) {
+    .text-hero {
+      font-size: 68px;
+    }
+  }
+}
