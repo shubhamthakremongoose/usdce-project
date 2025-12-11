@@ -75,19 +75,19 @@ export default function Hero() {
                     > MST Blockchain</span>
                 </h1>
 
-                <div className="relative inline-block px-6 md:px-10 my-10">
+                <div className="relative inline-block px-6 md:px-10 my-6 md:my-10">
                     <img
                         src={checkerBG}
                         alt=""
-                        className="absolute inset-0 w-full h-full object-cover opacity-80 -z-10"
+                        className="absolute inset-0 w-full h-full object-cover opacity-90 -z-10"
                     />
 
-                    <h2 className="xl:text-[68px] scale-y-[1.2] font-semibold relative z-10 tracking-widest">
+                    <h2 className="text-hero scale-y-[1.2] font-semibold relative z-10 tracking-widest">
                         USDCE
                     </h2>
                 </div>
 
-                <p className="mt-4 text-gray-600 max-w-xl mx-auto lg:text-xl">
+                <p className="md:mt-4 text-gray-600 max-w-xl mx-auto lg:text-xl">
                     Digital Stability Built on USDC Principles, Performance Powered by MST Blockchain.
                 </p>
 
