@@ -105,7 +105,7 @@ export default function Highlights() {
         </div>
 
         {/* RIGHT SIDE */}
-        <div className="space-y-14 md:w-[50%]">
+        <div className="space-y-14 md:w-[50%] overflow-y-auto">
           {items.map((item, i) => {
             const isActive = visibleIndex === i;
 
