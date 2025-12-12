@@ -13,9 +13,7 @@ export default function Home() {
                 <img src="/assets/logo.png" alt="logo" className="h-8" />
             </nav>
             <Hero />
-            <ScrollOverlap>
-                <Alignment />
-            </ScrollOverlap>
+            <Alignment />
             <AboutUs />
             <Highlights />
             <Workflow />

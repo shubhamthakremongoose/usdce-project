@@ -4,5 +4,4 @@ import tailwindCss from '@tailwindcss/vite'
 
 export default defineConfig({
   plugins: [react(), tailwindCss()],
-  base: '/usdce-project/', 
 })
